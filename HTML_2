@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>PRACTICA 1</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="funciona_por_favor.js"></script>
+  <link rel="stylesheet" href="css_formulario_practica_prueba2.css">
+  <link rel="icon" type="image/gif" href="img/candle.gif">
+</head>
+
+<header>
+  <div class="lds-circle">
+    <div>
+    </div>
+  </div>
+  <h1>CONTÁCTANOS</h1>
+  <a href="html_practica_prueba2.html"  class="casita"><img src="img/casita.png"></a>
+</header>
+
+<div class="navbar">
+  <button id="encender_velas" onclick="swapStyleSheet ('css_practica_prueba2.css')">ENCENDER VELAS </button>
+  <button id="apagar_velas" onclick="swapStyleSheet ('velas_apagadas.css')">APAGAR VELAS</button>
+</div>
+
+<main class="row">
+  <div class="right_column">
+    <div class="card" id="form_card">
+      <h2>Ponte en contacto con nosotros mediante uno de nuestros formularios</h2>
+      <br>
+      <div class="form">
+        <div class="container">
+            <div class="wrapper">
+              <ul class="steps">
+                <li class="is-active">Paso 1</li>
+                <li>Paso 2</li>
+                <li>Paso 3</li>
+              </ul>
+              <form class="form-wrapper">
+
+                <fieldset class="section is-active">
+                  <h3>Información personal</h3>
+                  <input type="text" name="name" id="name" placeholder="Nombre">
+                  <input type="text" name="surname" id="surname" placeholder="Apellido">
+                  <input type="date" name="birth_date" id="birth_date">
+                  <div class="row cf">
+                    <div class="four col">
+                      <input type="radio" name="r1" id="r1">
+                      <label for="r1">
+                        <h4>Hombre</h4>
+                      </label>
+                    </div>
+                    <div class="four col">
+                      <input type="radio" name="r1" id="r2"><label for="r2">
+                        <h4>Mujer</h4>
+                      </label>
+                    </div>
+                    <div class="four col">
+                      <input type="radio" name="r1" id="r3"><label for="r3">
+                        <h4>Otro</h4>
+                      </label>
+                    </div>
+                  </div>
+                  <br><br>
+                  <div class="button">Siguiente</div>
+
+                </fieldset>
+                <fieldset class="section">
+                  <h3>Información de contacto</h3>
+                  <select value="none" id="province" name="province">
+                    <option value="none" disabled selected>------</option>
+                    <option value="coruna">A Coruña</option>
+                    <option value="lugo">Lugo</option>
+                    <option value="orense">Orense</option>
+                    <option value="pontevedra">Pontevedra</option>
+                  </select>
+                  <input type="tel" name="phone" id="phone" placeholder="Teléfono móvil">
+                  <input type="email" name="email" id="email" placeholder="E-mail">
+                  <br><br>
+                  <div class="button">Siguiente</div>
+                </fieldset>
+
+                <fieldset class="section">
+                  <h3>¿Quién quieres que te atienda?</h3>
+                  <div class="row cf">
+                    <div class="four col">
+                      <input type="radio" name="r4" id="r4">
+                      <label for="r4">
+                      <h4>Lucas, el que todo lo sabe<h4>
+                      </label>
+                    </div>
+                    <div class="four col">
+                      <input type="radio" name="r4" id="r5">
+                      <label for="r5">
+                        <h4>Lucas, el que todo lo puede</h4>
+                      </label>
+                    </div>
+                    <div class="four col">
+                      <input type="radio" name="r4" id="r6">
+                      <label for="r6">
+                        <h4>Sergio, el que todo lo intenta</h4>
+                      </label>
+                    </div>
+                  </div>
+                  <br><br>
+                  <input class="submit button" type="submit" value="Enviar ticket">
+                </fieldset>
+                <fieldset class="section">
+                  <h3>¡Gracias por tu apoyo!</h3>
+                  <p>Tu formulario ha sido enviado y pronto será recibido por uno el profesional que has solicitado.<br>En cuanto nos sea posible enviaremos una respuesta, así que ¡Atento a tu correo electrónico!</p>
+                  <br><br>
+                  <div class="button">Rellenar otro ticket</div>
+                </fieldset>
+              </form>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="left_column">
+    <div class="card">
+      <h2>Otras formas de contactarnos</h2>
+      <table>
+        <tr class="personal_de_contacto">
+          <td>
+            <img src="img/personal_de_contacto.jpeg" alt="personal_de_contacto" class="foto_personal">
+          </td>
+          <td><strong>Correo electrónico: </strong> <a href="mailto:lucasnunezgonzalez02@liceolapaz.net">lucasnunezgonzalez02@liceolapaz.net</a><br>
+              <strong>Teléfono: </strong> 623 478 234<br>
+        </tr>
+        <tr class="personal_de_contacto">
+          <td>
+            <img src="img/personal_de_contacto2.png" alt="personal_de_contacto2" class="foto_personal">
+          </td>
+          <td><strong>Correo electrónico: </strong> <a href="mailto:lucasvazquezlopez00@liceolapaz.net">lucasvazquezlopez00@liceolapaz.net</a><br>
+              <strong>Teléfono: </strong> 693 562 518<br>
+          </td>
+        </tr>
+        <tr class="personal_de_contacto">
+          <td>
+            <img src="img/personal_de_contacto3.png" alt="personal_de_contacto3" class="foto_personal">
+          </td>
+          <td>
+            <strong>Correo electrónico:</strong> <a href="mailto:sergiobarreiroloures02@liceolapaz.net">sergiobarreiroloures02@liceolapaz.net</a><br>
+            <strong>Número de teléfono:</strong >659 365 934
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="card" id="nuestras_redes">
+      <h3>Nuestras redes</h3>
+      <br><br><br><br>
+      <ul>
+        <li>
+          <a href="https://www.facebook.com/VelasChulasSL/" target="_blank">
+            <i class="fa" aria-hidden="true"></i>
+            <span><img src="img/facebook.png"> - Facebook</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/SlVelas" target="_blank">
+            <i class="fa" aria-hidden="true"></i>
+            <span><img src="img/twitter.png"> - Twitter</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/velas_chulassl/?hl=es" target="_blank">
+            <i class="fa" aria-hidden="true"></i>
+            <span><img src="img/instagram.png"> - Instagram</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<footer>
+    <p> Esta página ha sido creada por <a href="mailto:ejemplo@ejemplo.com">Lucas Núñez González</a></p>
+</footer>
+
+<body>
+</body>
+</html>
