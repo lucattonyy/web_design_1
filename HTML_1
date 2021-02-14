@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>PRACTICA 1</title>
+  <link id="css" rel="stylesheet" href="css_practica_prueba2.css" type="text/css">
+  <link rel="icon" type="image/gif" href="img/candle.gif">
+  <script type="text/javascript">
+  function swapStyleSheet (sheet) {
+    document.getElementById('css').setAttribute('href', sheet);
+  }
+  </script>
+</head>
+
+<body>
+
+  <header id="header">
+    <h1>VELAS CHULAS SL</h1>
+  </header>
+
+  <div class="navbar">
+    <button id="encender_velas" onclick="swapStyleSheet ('css_practica_prueba2.css')">ENCENDER VELAS </button>
+    <button id="apagar_velas" onclick="swapStyleSheet ('velas_apagadas.css')">APAGAR VELAS</button>
+  </div>
+
+  <div class="row">
+    <div class="left_column">
+      <div class="card">
+        <h2 class="subtitle">Sobre la empresa</h2>
+        <section id="sobre_la_empresa">
+          <p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span> Mauris id suscipit felis. Donec tempus odio eu libero fringilla blandit. Praesent ut felis non elit faucibus efficitur ultricies viverra tortor. Vestibulum id euismod nulla, id porttitor nisl. Vestibulum sit amet euismod turpis, eget pharetra tortor. Vestibulum lectus purus, dapibus eget viverra eu, egestas ut lectus. Mauris in felis cursus, pulvinar lorem nec, consectetur ex. Pellentesque leo odio, viverra sed orci eu, pretium luctus arcu. Quisque vestibulum nunc sapien, non volutpat neque pulvinar eget. Ut purus diam, sollicitudin nec leo sit amet, facilisis pulvinar ex. Vestibulum elit sem, convallis et suscipit eget, facilisis ut sem. Suspendisse lacinia pulvinar ex, eu vestibulum massa aliquet eu. Vestibulum posuere hendrerit vestibulum. Donec id metus arcu.
+          </p>
+          <p><span>Nullam volutpat massa leo, quis tincidunt nunc viverra eu.</span> Phasellus accumsan orci purus, ut facilisis magna varius tristique. Aliquam erat volutpat. Etiam a erat libero. Ut at consequat nisl. Mauris eget felis arcu. Suspendisse potenti. Aenean sed sagittis enim, vel tincidunt nulla. Etiam sed felis consequat, rutrum metus non, blandit purus. Donec bibendum pharetra nulla sit amet commodo. Mauris condimentum erat et libero accumsan commodo. Integer a luctus justo. Vestibulum ac posuere lorem. Cras faucibus eleifend mi nec semper. Suspendisse magna odio, lacinia ac convallis a, pulvinar imperdiet quam. Sed eu ornare justo.
+          </p>
+        </section>
+        <a href="#header"><img src="img/casita.png" class="volver_al_inicio"></a>
+      </div>
+      <div class="card">
+        <h2 class="subtitle">Sobre las velas</h2>
+        <section id="sobre_las_velas">
+          <p><span>Quisque interdum nulla sapien, vitae hendrerit arcu condimentum ullamcorper.</span> Curabitur consequat ante nec arcu viverra, in aliquam dui cursus. Nunc condimentum magna id ipsum volutpat, ac varius purus imperdiet. Nam rhoncus urna non lectus ornare commodo. Etiam vel orci at ligula pulvinar consectetur sit amet in ligula. Duis eros purus, ornare id velit ac, feugiat sodales sapien. Cras mattis tempor risus, at convallis orci ultrices a. Etiam iaculis porta odio, et aliquam dui ornare non. Praesent a accumsan elit, vel mollis nisi. Mauris eleifend elementum est sed facilisis. Fusce eros dolor, tristique non hendrerit eu, euismod nec mi. Proin enim leo, luctus in massa vel, ornare iaculis lorem. Donec elementum posuere eros nec suscipit.
+          </p>
+          <p><span>In vitae massa eget neque finibus bibendum.</span> Etiam volutpat nisl eu tincidunt posuere. Suspendisse fermentum ligula a vulputate rhoncus. Vivamus ultrices tincidunt diam ac sodales. Nunc risus urna, pulvinar non sapien non, ornare hendrerit nisi. Etiam tincidunt faucibus hendrerit. Quisque dapibus nisi sed tortor tempor facilisis. Donec malesuada nibh sed laoreet scelerisque. Proin consequat sed leo sed porta. Cras non sapien sit amet nisl tincidunt porttitor malesuada sit amet risus. In facilisis massa ut ipsum scelerisque rutrum. Morbi pretium vitae nisi eget ultrices. Nam tortor nunc, congue eget nisi vel, laoreet interdum eros. Praesent sed vestibulum metus. Mauris maximus gravida lacus vitae aliquet. Nulla pulvinar interdum magna eget tincidunt.
+          </p>
+          <p><span>In vitae libero non eros suscipit pharetra vitae a arcu.</span> In auctor efficitur lobortis. Sed vel volutpat est. Fusce vitae sodales risus. Suspendisse vulputate nisl sit amet tortor lacinia volutpat a suscipit sem. Nullam id nibh venenatis, ullamcorper ligula rhoncus, sodales mi. Suspendisse convallis suscipit ipsum dignissim iaculis. Vivamus ultricies tortor molestie enim semper, id euismod augue malesuada.
+          </p>
+        </section>
+
+          <hr>
+
+          <div id="display_table_and_list">
+            <div id="table1">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Tipos de vela</th>
+                    <th>Color</th>
+                    <th>Uso</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Aventurera</td>
+                    <td>Amarillo</td>
+                    <td>Enciéndela para sentirte todo un aventurero</td>
+                  </tr>
+                  <tr>
+                    <td>Curiosa</td>
+                    <td>Morado</td>
+                    <td>Enciéndela para satisfacer tu curiosidad</td>
+                  </tr>
+                  <tr>
+                    <td>Esperanzadora</td>
+                    <td>Verde</td>
+                    <td>Enciéndela para recuperar la esperanza</td>
+                  </tr>
+                  <tr>
+                    <td>Rabiosa</td>
+                    <td>Roja</td>
+                    <td>Enciéndela para dejar huir tu rabia</td>
+                  </tr>
+                  <tr>
+                    <td>Celosa</td>
+                    <td>Naranja</td>
+                    <td>Enciéndela para abandonar los celos</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div id="list1">
+              <ul>
+                <li>lista de prueba
+                  <ul>
+                    <li>lista de prueba</li>
+                    <li>lista de prueba</li>
+                    <li>lista de prueba</li>
+                  </ul>
+                </li>
+                <li>lista de prueba
+                  <ul>
+                    <li>lista de prueba</li>
+                    <li>lista de prueba</li>
+                    <li>lista de prueba</li>
+                  </ul>
+                </li>
+                <li>lista de prueba
+                  <ul>
+                    <li>lista de prueba</li>
+                    <li>lista de prueba</li>
+                    <li>lista de prueba</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a href="#header"><img src="img/casita.png" class="volver_al_inicio"></a>
+
+      </div>
+      <div class="card">
+        <section>
+          <h3 class="subtitle" id="nuestras_velas">NUESTRAS VELAS</h3>
+          <div id="display_images_top_row">
+            <div class="vela_img rotate_right"><img src="img/vela_img1.jfif" alt="vela_img1"></div>
+            <div class="vela_img rotate_left"><img src="img/vela_img2.jfif" alt="vela_img2"></div>
+            <div class="vela_img rotate_right"><img src="img/vela_img3.jfif" alt="vela_img3"></div>
+          </div>
+          <div id="display_images_middle_top_row">
+            <div class="vela_img rotate_left"><img src="img/vela_img4.jfif" alt="vela_img1"></div>
+            <div class="vela_img rotate_right"><img src="img/vela_img5.jfif" alt="vela_img2"></div>
+            <div class="vela_img rotate_left"><img src="img/vela_img6.jfif" alt="vela_img3"></div>
+          </div>
+          <div id="display_images_middle_bottom_row">
+            <div class="vela_img rotate_right"><img src="img/vela_img7.jfif" alt="vela_img1"></div>
+            <div class="vela_img rotate_left"><img src="img/vela_img8.jfif" alt="vela_img2"></div>
+            <div class="vela_img rotate_right"><img src="img/vela_img9.jfif" alt="vela_img3"></div>
+          </div>
+          <div id="display_images_bottom_row">
+            <div class="vela_img rotate_left"><img src="img/vela_img10.jfif" alt="vela_img1"></div>
+            <div class="vela_img rotate_right"><img src="img/vela_img11.jfif" alt="vela_img2"></div>
+            <div class="vela_img rotate_left"><img src="img/vela_img12.jfif" alt="vela_img3"></div>
+          </div>
+          <a href="#header"><img src="img/casita.png" class="volver_al_inicio"></a>
+
+        </section>
+      </div>
+    </div>
+
+    <div class="right_column">
+      <nav class="card">
+          <a href="#sobre_la_empresa" class="list_item">
+            <span>SOBRE LA EMPRESA</span>
+          </a>
+          <br>
+          <a href="#sobre_las_velas" class="list_item">
+            <span>SOBRE LAS VELAS</span>
+          </a>
+          <br>
+          <a href="#nuestras_velas" class="list_item">
+            <span>NUESTRAS VELAS</span>
+          </a>
+          <br>
+          <a href="#socios_comerciales" class="list_item">
+            <span>SOCIOS COMERCIALES</span>
+          </a>
+          <br>
+          <a href="#nuestros_profesionales" class="list_item">
+            <span>NUESTROS PROFESIONALES</span>
+          </a>
+        <ul>
+      </nav>
+
+      <div class="card" id="socios_comerciales">
+        <section>
+            <h3>SOCIOS COMERCIALES</h3>
+            <nav id="enlaces">
+                <a href="https://www.velasbaratas.com/" target="_blank" class="list_item">
+                  <span>Velas baratas</span>
+                </a>
+                <br>
+                <a href="https://www.casaviva.es/salon/velas-e-inciensos/velas.html" target="_blank" class="list_item">
+                  <span>Casa viva</span>
+                </a>
+                <br>
+                <a href="https://www.velasduranyalfonso.es/tienda/" target="_blank" class="list_item">
+                  <span>Velas Durán y Alfonso</span>
+                </a>
+              </ul>
+            </nav>
+        </section>
+      </div>
+
+            <div class="card" id="nuestros_profesionales">
+              <section>
+                <h3>NUESTROS PROFESIONALES</h3>
+                <img src="img/personal_de_contacto.jpeg" alt="personal_de_contacto" class="personal_de_contacto">
+                <table>
+                  <tr>
+                    <th>Nombre:</th>
+                    <td>Lucas</th>
+                  </tr>
+                  <tr>
+                    <th>Formación:</th>
+                    <td>Velología superior avanzada</td>
+                  </tr>
+                  <tr>
+                    <th>Lema profesional:</th>
+                    <td>"No te estreses, enciende una vela, relajate, y empieza a vivir"<td>
+                  </tr>
+                </table>
+                <br>
+                <hr>
+                <img src="img/personal_de_contacto2.png" alt="personal_de_contacto2" class="personal_de_contacto">
+                <table>
+                  <tr>
+                    <th>Nombre:</th>
+                    <td>Lucas</th>
+                  </tr>
+                  <tr>
+                    <th>Formación:</th>
+                    <td>Velología superior</td>
+                  </tr>
+                  <tr>
+                    <th>Lema profesional:</th>
+                    <td>"Hay dos cosas en la vida que me motivan a ser mejor. Una es mi barba, y la otra NUESTRAS VELAS"<td>
+                  </tr>
+                </table>
+                <br>
+                <hr>
+                <img src="img/personal_de_contacto3.png" alt="personal_de_contacto3" class="personal_de_contacto">
+                <table>
+                  <tr>
+                    <th>Nombre:</th>
+                    <td>Sergio</th>
+                  </tr>
+                  <tr>
+                    <th>Formación:</th>
+                    <td>Diseño de interiores</td>
+                  </tr>
+                  <tr>
+                    <th>Lema profesional:</th>
+                    <td>"Si tuviese que elegir entre mi gato o mi novia, elegiría las velas"<td>
+                  </tr>
+                </table>
+                <br>
+                <hr>
+                <br>
+                <div class="button">
+                  <a href="pagina_contacto_prueba2.html">
+                    <span>CONTACTA CON NOSOTROS</span>
+                  </a>
+                </div>
+              </section>
+            </div>
+
+    </div>
+  </div>
+
+  <footer>
+      <p> Esta página ha sido creada por <a href="mailto:ejemplo@ejemplo.com">Lucas Núñez González</a></p>
+  </footer>
+
+</body>
+</html>
