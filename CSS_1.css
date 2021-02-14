@@ -1,0 +1,429 @@
+/*
+"*" selecciona todos los elementos, y la regla "box-sizing: border-box;" hace que el borde de los elementos de caja forme parte del tamaño
+*/
+* {
+  box-sizing: border-box;
+}
+
+/*
+"html" selecciona la etiqueta del mismo elemento (es decir, todo el documento), y "scroll-behavior: smooth;" hace que el deslizamiento de la página sea suave
+*/
+html {
+  scroll-behavior: smooth;
+}
+
+/*
+"body" selecciona el cuerpo del documento html para establecer el relleno de la caja y el color de fondo de la misma
+*/
+body {
+  padding: 20px;
+  background: #AEC6CF;
+}
+
+/*
+"header" selecciona la cabecera de la página, estableciendo respectivamente:
+    tipo de letra y tipo de letra alternativa (por si existe algún problema de compatibilidad con el navegador);
+    margen;
+    relleno de la caja;
+    radio del borde (con motivo de redondear los bordes);
+    centrado de texto;
+    color de fondo de la caja;
+    sombra de la caja;
+*/
+header {
+  font-family: Verdana, Arial;
+  margin: 1em;
+  padding: 0.5em;
+  border-radius: 15px;
+  text-align: center;
+  background: white;
+  box-shadow: 5px 10px gray;
+}
+
+/*
+Con las dos siguientes reglas definiremos el estilo de las 2 partes principales de la página
+*/
+
+/*
+La columna de la izquierda, flotará en la parte izquierda, ocupando un 75% del body
+*/
+.left_column {
+  float: left;
+  width: 75%;
+}
+
+/*
+La columna de la derecha, flotando también pero a la derecha, ocupando un 25% de la página
+*/
+.right_column {
+  float: right;
+  width: 23%;
+}
+
+/*
+Con esta regla eliminamos los marcadores de los índices de las listas de navegación
+*/
+nav ul {
+  list-style: none;
+}
+
+/*
+Esta regla define el estilo de los elementos (de una lista) con clase = list_item
+Para ello, define:
+    que su disposición será en bloque (de esta manera se dispondrán en cajas, unas encima de otras);
+    se cambia el color de fondo, de letra y el estilo de letra;
+    se establece el ancho de la caja al 100%;
+    un relleno de 20px;
+    se redondean los bordes superior e inferior de la derecha;
+    color de letra negro;
+*/
+.list_item {
+  display: block;
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  color: black;
+}
+
+/*
+En esta regla, matizaremos el estilo definido en la regla anterior estableciendo un hover que hará que cambien el color de fondo, borde y ancho de caja cuando el cursor pase por encima de alguno de estos elementos
+*/
+.list_item:hover {
+  background-color: #BDBDBD;
+  border: 2px solid #aaa;
+  width: 105%;
+}
+
+/*
+Esta regla centra el texto de los títulos de las bloques que flotan en la zona derecha del body
+*/
+section > h3 {
+  text-align: center;
+}
+
+/*
+Esta regla es la que definirá tamaño, márgenes, color y forma de las cajas contenedoras de la página
+*/
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 15px;
+  overflow: auto;
+}
+
+/*
+Con esta regla estilizamos el contenedor del subtítulo de cada sección principal
+*/
+.subtitle {
+  margin-bottom: 1.5em;
+  padding: 0.3em;
+  border-bottom: 3px solid darkgray;
+  border-left: 3px solid darkgray;
+  border-radius: 15px;
+}
+
+/*
+El selector ".row" hace referencia a una clase, y con ".row:after" insertamos algo seguido del <div> ".row":
+    en este caso, insertamos un espacio en blanco;
+    ajustamos la disposicion a modo de tabla;
+    limpiamos el formato;
+*/
+.row:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+/*
+Con esta regla estilizamos la caja del footer
+*/
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/*
+Esta regla se encarga de establecer la disposición de los elementos ".table" y ".list", de manera que establecemos ambos elementos como elementos de bloque flexibles.
+*/
+#display_table_and_list {
+  display: flex;
+}
+
+/*
+Esta regla coloca la tabla de la segunda sección y establece un margen
+*/
+#table1 {
+  width: 50%;
+  margin-right: 15%;
+}
+
+/*
+Esta regla coloca la lista de la segunda sección
+*/
+#list1 {
+  width: 25%;
+}
+
+/*
+Esta regla colapsa los bordes de la tabla mencionada en la regla anterior
+*/
+#table1 table {
+  border-collapse: collapse;
+}
+
+/*
+A su vez, esta regla estiliza las filas de la tabla
+*/
+#table1 td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+/*
+Con esta regla nos encargamos de definir el color del fondo de las filas, siendo diferente para pares e impares
+*/
+#table1 tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+/*
+Esta regla establecerá el hover de las filas de la tabla
+*/
+#table1 tr:hover {
+  background-color: #A4A4A4;
+}
+
+/*
+Esta otra, el hover de las celdas individualmente
+*/
+#table1 th:hover {
+  background-color: #585858;
+}
+
+/*
+Esta regla establece tambien el hover de las celdas
+*/
+#table1 td:hover {
+  background-color: #585858;
+}
+
+/*
+Esta regla estiliza las sublistas de la misma, estableciendo color de fondo
+*/
+li li {
+  background-color: #dddddd;
+}
+
+/*
+Con esta regla cambiamos la tipografía de la primera palabra de cada párrafo
+*/
+span {
+  font-family: Verdana;
+  font-size: 17px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/*
+Esta regla cambia el color y tipo de letra de todo enlace que contenga una cadena de texto "mail"
+*/
+a[href*="mail"] {
+  font-style: italic;
+  color: #B404AE;
+}
+
+/*
+Esta regla dispone en dos columnas separadas por un listón vertical todo(no solo texto) el contenido del <div> con la clase citada
+*/
+#sobre_la_empresa {
+  column-count: 2;
+  column-rule: 3px solid #dddddd;
+}
+
+/*
+Justificado del texto de los párrafos
+*/
+p {
+  text-align: justify;
+}
+
+/*
+Las siguientes cuatro reglas afectan a las filas de fotografías respectivamente, estilizando:
+    disposición flexible;
+    márgenes izquierdo, superior e inferior;
+*/
+#display_images_top_row {
+  z-index: 0;
+  display: flex;
+  margin-left: 32px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#display_images_middle_top_row {
+  z-index: 0;
+  display: flex;
+  margin-left: 32px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#display_images_middle_bottom_row {
+  z-index: 0;
+  display: flex;
+  margin-left: 32px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#display_images_bottom_row {
+  z-index: 0;
+  display: flex;
+  margin-left: 32px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/*
+Con esta regla, definiremos el estilo de las propias imágenes de manera que parezcan fotos impresas pegadas en la pantalla
+*/
+.vela_img img {
+  width: 284px;
+  padding: 10px 10px 20px 10px;
+  border: 1px solid #BFBFBF;
+  background-color: white;
+  box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+/*
+Las siguientes dos reglas servirán para rotar las imágenes hacia la izquierda o la derecha, respectivamente
+*/
+.rotate_right {
+  transform: rotate(7deg);
+}
+
+.rotate_left {
+  transform: rotate(-8deg);
+}
+
+/*
+Esta regla estiliza las fotos del apartado de contacto
+*/
+.personal_de_contacto {
+  width: 75%;
+  height: 250px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 35px;
+  border-radius: 100px;
+}
+
+/*
+Esta regla estiliza el botón del apartado de contacto estableciendo:
+    color de fondo;
+    relleno de la caja;
+    color de fuente;
+    tipo de cursor;
+    radio del border;
+    sombra de la caja;
+*/
+.button {
+  padding: 8px 30px;
+  cursor: pointer;
+  right: 20px;
+  bottom: 20px;
+  border: 3px solid #AEC6CF;
+  border-radius: 100px;
+  box-shadow: none;
+}
+
+/*
+Esta regla cambia la opacidad del botón al pasar el cursor por encima
+*/
+.button:hover {
+  background-color: #AEC6CF;
+}
+
+/*
+Con estas dos reglas editamos el icono de la vuelta al inicio
+*/
+.volver_al_inicio {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  float: right;
+}
+
+.volver_al_inicio:hover {
+  opacity: 80%;
+}
+
+/*
+Eliminamos el formato de los enlaces de los botones
+*/
+.button>a {
+  text-decoration: none;
+}
+
+/*
+Con estas dos reglas editamos el formato del texto contenido en aquellas etiquetas con la clase button
+*/
+.button span {
+  text-align: center;
+  font-weight: bold;
+  color: #AEC6CF;
+  display: flex;
+}
+
+.button:hover span {
+  color: white;
+}
+
+/*
+Esta regla estiliza la barra de navegación superior:
+    "position: sticky" fija la barra de navegación en la pantalla, mientras que "top: 0" establece su posición en la parte de arriba de la pantalla
+    "z-index" es una regla que fija el nivel de superposición en el que se encuentra el objeto
+*/
+.navbar {
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  width: 95.84%;
+  background-color: #ddd;
+  border-radius: 5px;
+  overflow: auto;
+}
+
+/*
+Con las siguientes cuatro reglas daremos formato a los botones de la barra de navegación
+*/
+#encender_velas, #apagar_velas {
+  float: left;
+  background-color: transparent;
+  width: 50%;
+  padding: 10px;
+  outline: none;
+}
+
+#encender_velas:active, #apagar_velas:active {
+  background: #AEC6CF;
+  color: white;
+}
+
+button:hover {
+  border-bottom: 2px solid dodgerblue;
+}
+
+button {
+  font-family: Verdana;
+  font-size: 16px;
+  font-weight: bold;
+  color: gray;
+  border: none;
+}
